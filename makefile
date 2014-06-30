@@ -1,4 +1,4 @@
-
+all: build run
 
 build:
 	cabal build
