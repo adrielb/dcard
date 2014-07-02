@@ -8,3 +8,6 @@ run:
 
 deps:
 	cabal install --only-dependencies
+
+munkres:
+	cabal get Munkres
