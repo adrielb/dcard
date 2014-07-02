@@ -5,3 +5,6 @@ build:
 
 run:
 	./dist/build/dcard/dcard
+
+deps:
+	cabal install --only-dependencies
