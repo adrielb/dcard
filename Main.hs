@@ -1,6 +1,7 @@
 import Data.Algorithm.Munkres
 import Data.Array.Unboxed 
 import System.Console.Readline
+import Text.CSV
 
 
 readInput :: Int -> IO()
@@ -14,7 +15,12 @@ getCost :: Int -> Int -> Int
 getCost user partner = user * partner
 
 main :: IO ()
-main = testReading
+main = testCSV
+
+testCSV :: IO()
+testCSV = do
+    input <- parseCSVFromFile "input.txt"
+    print input
 
 testReading :: IO()
 testReading = do

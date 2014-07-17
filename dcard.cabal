@@ -23,5 +23,6 @@ executable dcard
                      , Munkres
                      , array
                      , readline
+                     , csv
   -- hs-source-dirs:      
   default-language:    Haskell2010
