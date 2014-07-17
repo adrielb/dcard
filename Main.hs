@@ -14,7 +14,12 @@ getCost :: Int -> Int -> Int
 getCost user partner = user * partner
 
 main :: IO ()
-main = testUArray
+main = testReading
+
+testReading :: IO()
+testReading = do
+    input <- readFile "input.txt"
+    print input
 
 testInput :: IO()
 testInput = do
